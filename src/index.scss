@@ -1,0 +1,39 @@
+//Generics
+@import './assets/genericCss';
+
+//Homepage
+@import './components/Header/_header.scss';
+@import './components/Header/mobileMenue';
+@import './components/HomePage/Showcase/showcase';
+@import './components/HomePage/BrandMentions/brandMentions';
+@import './components/HomePage/Features/features';
+@import './components/HomePage/AboutCompany/aboutCompany';
+@import './components/HomePage/OurServices/ourServices';
+@import './components/HomePage/WhyChooseUs/whyChooseUs';
+@import './components/HomePage/ProjectAndCase/projectAndCase';
+@import './components/HomePage/MeetOurTeam/meetOurTeam';
+@import './components/HomePage/ArticleAndNews/articleAndNews';
+
+//News
+@import './components/NewsPage/OurNews/ourNews';
+
+//News and detailes
+@import './components/NewsDetails/MainPage/mainpage';
+@import './components/NewsDetails/Searchbox/searchbox';
+
+//Contact page
+@import './components/ContactPage/ContactBoxes/contactBoxes';
+@import './components/ContactPage/Map/map';
+@import './components/ContactPage/MessageSection/messageSection';
+
+// Sign up / Footer
+@import './components/NewsUpdate/newsUpdate';
+@import './components/Footer/footer';
+
+// 404 page
+@import './components/PageNotFound/pageNotFound';
+
+
+
+
+

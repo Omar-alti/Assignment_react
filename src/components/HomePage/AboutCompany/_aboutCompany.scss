@@ -1,0 +1,116 @@
+.about-section {
+    padding-bottom: 130px;
+
+    .container {
+        display: flex;
+        gap: 200px;
+        margin-top: 100px;
+        position: relative;
+        padding: 0 10px;
+    }
+
+    .picture {
+        display: none;
+        margin-left: 40px;
+
+        .samatha-lines {
+            position: absolute;
+            top: 33px;
+            left: 20px;
+        }
+
+        .blue-square {
+            background-color: #BEEBFF;
+            position: absolute;
+            bottom: 40px;
+            left: 0px;
+            padding: 40px 40px 40px 20px;
+
+            p {
+                color: #191919;
+                font-style: italic;
+                font-size: 1.6rem;
+                font-weight: 500;
+            }
+
+            h3 {
+                font-size: 2rem;
+
+                span {
+                    color: #F94D1C;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .section-title {
+        h2 {
+            padding-bottom: 20px;
+            margin-right: 40px;
+        }
+
+        .about-p {
+            color: #191919;
+            margin-bottom: 40px;
+        }
+
+        .btn-black {
+            margin-right: 30px;
+        }
+
+        .btn-video-text {
+
+            display: flex;
+            align-items: center;
+
+            .btn-round {
+                background-color: white;
+                color: #191919;
+                &:hover {
+                    background-color:black;
+                    i {
+                        color: white;
+                    }
+                }
+            }
+
+            p {
+                margin-top: 15px;
+                margin-left: 20px;
+                color: #191919;
+                font-weight: 600;
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    @media (max-width:373px) {
+
+        .btn-video-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .btn-black {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    @media (min-width:1200px) {
+        padding-top: 110px;
+
+        .picture {
+            display: block
+        }
+
+        .section-title {
+
+            .about-p {
+                margin-bottom: 130px;
+            }
+        }
+    }
+}

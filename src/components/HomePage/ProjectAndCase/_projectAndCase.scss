@@ -1,0 +1,67 @@
+.project-and-case-section {
+    margin-bottom: 160px;
+
+    .container {
+        margin-top: 100px;
+        padding: 0 10px;
+    }
+
+    .section-title {
+        margin-bottom: 65px;
+        text-align: center;
+    }
+
+    .articles {
+        display: grid;
+        padding-bottom: 70px;
+
+        .image-box {
+            border: 3px solid transparent;
+
+            a {
+                text-decoration: none;
+
+                img {
+                    width: 100%;
+                }
+
+                h3 {
+                    padding-top: 30px;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid #DAD9D3;
+                }
+
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    color: #191919;
+                    text-align: end;
+                    padding-right: 15px;
+                    padding-top: 25px;
+
+                    i {
+                        margin-left: 5px;
+                        font-size: 0.85em;
+                    }
+                }
+            }
+
+            &:hover {
+                border-color:steelblue;
+            }
+        }
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    @media (min-width:1200px) {
+
+        .articles {
+            gap: 30px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.container {
+
+    .pageTitle {
+        
+        h2 {
+            font-family: 'DM Sans', sans-serif;
+            margin-top: 140px;
+            font-weight: 700;
+            font-size: 4.5rem;
+            color: #191919;
+            margin-bottom: 20px;    
+        }
+    }
+
+    .smallBtns {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap:10px;
+
+        .smallBtn {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border:1px solid #DAD9D3;
+            min-width: 33px;
+            min-height:33px;
+            border-radius:7px;
+            font-weight: 600;
+            color: #191919;
+            cursor: pointer;
+            transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+
+            &:hover{
+                background-color: #191919;
+                color: white;
+            }
+        }
+    }
+}

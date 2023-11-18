@@ -1,0 +1,95 @@
+.our-services {
+    background-color: #F0EFE9;
+    margin-bottom: 70px;
+    position: relative;
+
+    .white-lines {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .container {
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .services-boxes {
+
+        a {
+            text-decoration: none;
+
+            .service-box {
+                background-color: white;
+                margin-bottom: 20px;
+                padding: 45px 30px 60px;
+                border-radius: 10px;
+
+                .line {
+                    width: 40px;
+                    height: 40px;
+                    border-top: 2px solid #191919;
+                }
+
+                p {
+                    color: #191919;
+                    line-height: 30px;
+                    font-size: 1.6rem;
+                }
+
+                .button {
+                    margin-top: 20px;
+                    text-align: end;
+
+                    .btn-round {
+                        display: inline-block;
+                    }
+                }
+
+                &:hover {
+                    background-color: #F9D783;
+                    transform: scale(1.05);
+                    box-shadow: 10px 10px 20px #191919;
+                    transition: background-color 0.2s ease-in;
+
+                    .btn-round {
+                        background-color: white;
+                        border-color: white;
+
+                        i {
+                            color: #191919;
+                        }
+                    }
+                }
+
+                transition: background-color 0.2s ease-out;
+
+                &:active {
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
+
+    .browse-btn {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    @media(min-width:992px) {
+        .section-title {
+            text-align: left;
+            max-width: 500px;
+        }
+
+        .services-boxes {
+            display: flex;
+            gap: 30px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.brands-section {
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        padding-top: 30px;
+
+        img {
+            width: 140px;
+
+            @media (min-width:576px) {
+                width: 224px
+            }
+        }
+
+        @media (min-width:1200px) {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 70px;
+            margin-bottom: 150px;
+            padding-top: 0;
+        }
+    }
+}

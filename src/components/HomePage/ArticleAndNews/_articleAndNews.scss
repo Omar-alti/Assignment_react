@@ -1,0 +1,31 @@
+.articles-and-news {
+
+    .heading-and-btn {
+
+        .section-title {
+            margin-bottom: 60px;
+        }
+
+        .transparent-btn {
+            margin-bottom: 7px;
+        }
+    }
+    
+    .article-boxes {
+        background-color: white;
+    }
+
+    @media (min-width:992px) {
+
+        .heading-and-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-bottom: 50px;
+
+            .section-title {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

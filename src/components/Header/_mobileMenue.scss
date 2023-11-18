@@ -1,0 +1,42 @@
+.mobile-menu {
+    background-color: #F0EFE9;
+    top: 110px;
+    right: 0;
+    left: 0;
+
+    ul {
+        margin-top: 60px;
+        padding:0;
+
+        li {
+            list-style-type: none;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #191919;
+            font-weight: 600;
+            font-size: 25px;
+        
+            &:hover{
+                color:#191919;
+            }
+
+            i{
+                margin-right: 100px;
+                margin-left: 20px;
+                color:#F0EFE9;
+            }
+        }
+    }
+
+    .active{
+        font-size: 35px;
+
+        i{
+            color:#191919;
+        }
+    }
+}

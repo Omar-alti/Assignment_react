@@ -1,0 +1,114 @@
+.search-box {
+    width: 350px;
+    margin-bottom: 30px;
+    @media (min-width:768px) {
+        margin-left: 150px;
+        margin-bottom: 30px;
+    }
+
+    @media (min-width:1200px) {
+        margin-bottom:0px;
+        margin-left: 50px;
+        margin-top: 325px;
+    }
+    @media (min-width:1355px) {
+        margin-left: 150px;
+        margin-top: 325px;
+    }
+    form {
+        position: relative;
+
+        input {
+            margin-top: 20px;
+            background-color: #F3F3F3;
+            padding: 10px 50px;
+            width:100%;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+        }
+
+        .magnifying-glass {
+            color: #191919;
+            font-size: 1em;
+            position: absolute;
+            top: 30px;
+            left: 25px;
+        }
+    }
+
+    .recent {
+        font-family: 'DM Sans', sans-serif;
+        border: 1px solid #D1D1D1;
+        margin-top: 35px;
+
+        h3 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-left: 35px;
+        }
+
+        .underline {
+            border: 1px solid #191919;
+            width: 40px;
+            margin-bottom: 30px;
+        }
+
+        &>div {
+            width: 300px;
+            margin-left: 35px;
+            border-bottom: 1px solid #D1D1D1;
+
+            article {
+                font-weight: 700;
+                margin-bottom: 10px;
+                margin-top: 15px;
+            }
+
+            p {
+                font-size: 1.4rem;
+                margin-bottom: 15px;
+
+                &.last {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+
+    .categories {
+        font-family: 'DM Sans', sans-serif;
+        border: 1px solid #D1D1D1;
+        margin-top: 35px;
+
+        h3 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-left: 35px;
+        }
+
+        .underline {
+            border: 1px solid #191919;
+            width: 40px;
+            margin-bottom: 30px;
+            margin-left: 35px;
+        }
+
+        p {
+            font-weight: 700;
+            margin-left: 35px;
+            margin-bottom: 15px;
+
+            span {
+                margin-left: 8px;
+                color: #a1a1a1
+            }
+
+            &.last {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

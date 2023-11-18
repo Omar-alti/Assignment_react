@@ -1,0 +1,138 @@
+.meet-our-team {
+    background-color: #F9D783;
+    padding-top: 140px;
+    padding-bottom: 200px;
+    margin-bottom: 125px;
+
+    .top-part {
+
+        .title-and-button {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 70px;
+            align-items: center;
+
+            .section-title {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        .employees {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .employee img {
+                width: 90%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .whitebox {
+        background-color: white;
+        margin-top: 120px;
+        outline: 100px solid white;
+        padding: 1px;
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 80px;
+            margin-top: 100px;
+        }
+
+        .rating-boxes {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 120px;
+            align-items: center;
+
+            .ratingbox {
+                max-width: 370px;
+                border-bottom: 1px solid black;
+                margin-bottom: 40px;
+
+                p {
+                    margin-top: 30px;
+                    margin-bottom: 50px;
+                    font-weight: 600;
+                    font-size: 1.8rem;
+                    font-style: italic;
+                }
+
+                .rating-person {
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    margin-bottom: 15px;
+
+                    .name {
+                        margin-left: 20px;
+
+                        p {
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                            color: #F94D1C;
+                        }
+                    }
+                }
+            }
+        }
+
+        .button {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (min-width:992px) {
+
+        .top-part {
+
+            .title-and-button {
+                flex-direction: row;
+                justify-content: space-between;
+
+                .section-title {
+                    text-align: start;
+                    align-items: flex-start;
+                }
+
+                .button {
+                    margin-top: -110px;
+                }
+            }
+
+
+            .employees {
+                margin-bottom: 50px;
+                justify-content: space-between;
+
+                .employee {
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .whitebox {
+
+            .rating-boxes {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 120px;
+
+                .ratingbox {
+                    margin-bottom: 0px;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}

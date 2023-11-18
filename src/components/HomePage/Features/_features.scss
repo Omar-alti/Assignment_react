@@ -1,0 +1,82 @@
+.features-section {
+
+    .container {
+        outline: 1px solid #DAD9D3;
+        outline-offset: 1rem;
+        padding: 0 10px 25px 10px;
+
+        h2 {
+            padding-bottom: 35px;
+        }
+
+        .btn {
+            text-align: center;
+            display: block;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 20px;
+            margin-top: 50px;
+
+            .plus-icon {
+                position: relative;
+
+                .plus1 {
+                    position: absolute;
+                    font-size: 9px;
+                    top: -12px;
+                    left: 13px;
+                }
+
+                .plus2 {
+                    position: absolute;
+                    font-size: 9px;
+                    top: -8px;
+                    left: 35px;
+                }
+
+                .plus3 {
+                    position: absolute;
+                    font-size: 9px;
+                    top: 9px;
+                    left: 46px;
+                }
+            }
+
+            article {
+                justify-content: space-between;
+
+                img {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        @media (min-width:1200px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            outline-offset: 70px;
+
+            .section-title {
+                margin-right: 100px;
+                margin-top: 30px;
+                margin-bottom: 150px;
+                max-width: 450px;
+            }
+
+            .content {
+                column-gap: 50px;
+                row-gap: 50px;
+                margin-top: 30px;
+                padding-right: 100px;
+            }
+
+            .features{
+                margin-bottom: 29px;
+            }
+        }
+    }
+}

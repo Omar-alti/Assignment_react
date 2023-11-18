@@ -1,0 +1,129 @@
+header {
+
+    background-color: #F0EFE9;
+    padding: 15px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu-bars {
+            border: none;
+            background-color: transparent;
+            font-size: 2.5rem;
+            z-index:1;
+            color: #191919;
+        }
+        .active{
+            color:white;
+        }
+
+        .menu {
+            display: none;
+            flex: 1;
+
+            .top-of-header {
+                display: none;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #DAD9D3;
+                padding-bottom: 10px;
+
+                .contact-information {
+                    display: flex;
+
+                    .contact {
+                        border-right: 1px solid #DAD9D3;
+                        margin-right: 15px;
+                        padding-right: 15px;
+                        font-size: 15px;
+                        font-weight: 300;
+
+                        &.last {
+                            border: none;
+                        }
+
+                        i {
+                            color: #191919;
+                            font-size: 1.2em;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .social-media {
+                    align-items: center;
+
+                    a {
+                        color: #191919;
+                        margin-left: 10px;
+                        font-size: 1.1em;
+
+                        &:hover {
+                            color: #898181;
+                        }
+                    }
+                }
+            }
+
+            .nav-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 10px;
+
+                nav {
+
+                    a {
+                        text-decoration: none;
+                        color: #191919;
+                        margin-right: 40px;
+                        position: relative;
+
+                        &.active {
+                            font-weight: 500;
+                        }
+
+                        &.active::after,
+                        &:hover::after {
+                            content: '';
+                            position: absolute;
+                            font-weight: 500;
+                            height: 2px;
+                            width: 15px;
+                            background-color: #191919;
+                            left: 50%;
+                            bottom: -3px;
+                            transform: translate((calc(50% - 15px)));
+                        }
+                    }
+                }
+
+                .btn {
+                    padding: 10px 30px;
+                }
+            }
+        }
+
+        @media (min-width:768px) {
+            gap: 70px;
+
+            .menu-bars {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .menu {
+                .top-of-header {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
